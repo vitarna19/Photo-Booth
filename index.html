@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DV Photo Booth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎥 DV Photo Booth</h1>
+
+  <div class="container">
+    <div class="left-panel">
+      <div id="booth">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <div id="countdown"></div>
+        <div id="flash"></div>
+      </div>
+      <button class="btn" onclick="startCountdown()"> Take Photo Strip</button>
+    </div>
+
+    <div class="right-panel">
+      <h2> Photo Strip Gallery</h2>
+      <div id="gallery"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
